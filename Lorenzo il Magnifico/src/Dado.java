@@ -1,11 +1,18 @@
+import java.awt.*;
+
 /**
  * Created by dimitri on 13/05/2017.
  */
 public class Dado {
-    char colore =""; //bianco (b) nero (n) arancione (a)
-    int faccia = 0;
-    public Dado (char colore){
-        this.colore=colore;
+    private Colore color =null;
+    private int faccia = 0;
+    public Dado (){color=null; faccia=0;}
+    public Dado (Colore colore){
+        this.color=colore;
+    }
+    public void setDado( int val){
+        faccia=val;
+
     }
     public int lancia(){
         faccia = (int)(Math.random()*6);
@@ -14,4 +21,6 @@ public class Dado {
     public int getValue(){
         return faccia;
     }
+
+
 }
