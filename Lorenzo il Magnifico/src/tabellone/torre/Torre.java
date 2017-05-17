@@ -1,5 +1,6 @@
-package tabellone;
-
+package tabellone.torre;
+import carte.Carta;
+import principale.*;
 /**
  * Created by dimitri on 13/05/2017.
  */
@@ -11,7 +12,7 @@ public class Torre {
         livelli[0] = a0;
         livelli[1] = a1;
         livelli[2] = a2;
-        livelli[3] = a3; //provare con ciclo for
+        livelli[3] = a3;
     }
 
     public void pulisciTorre(){
@@ -29,7 +30,9 @@ public class Torre {
 
     public boolean contrlPres(){
         for(int i=0;i<4;i++){
-            return livelli[i].getOcccupato();
+            if(livelli[i].getOcccupato() == true){
+                return true;
+            }
         }return false;
     }
 

@@ -1,9 +1,9 @@
-package Risorse;
+package risorse;
 
 /**
  * Created by ggnsingh on 16/05/2017.
  */
-public class PuntiFede {private int valoreRisorsa = 0;
+public class PuntiFede extends Risorsa {private int valoreRisorsa = 0;
 
     public PuntiFede(){
         valoreRisorsa = 0;
