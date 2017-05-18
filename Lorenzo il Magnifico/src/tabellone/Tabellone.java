@@ -42,11 +42,14 @@ public class Tabellone {
         dadoBianco.lancia();
         dadoArancione.lancia();
     }
-    public void pulisciTabellone(){
+    public void pulisci(){
         torreTerritori.pulisciTorre();
         torreEdifici.pulisciTorre();
         torreImprese.pulisciTorre();
         torrePersonaggi.pulisciTorre();
+        consiglio.pulisciCons();
+        mercatoDueAree.pulisci();
+        mercatoQuattroAree.pulisci();
 
 
     }
