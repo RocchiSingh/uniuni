@@ -1,12 +1,13 @@
-package tabellone;
+package tabellone.RaccoltaProduzione;
+import principale.*;
 
 /**
  * Created by dimitri on 15/05/2017.
  */
-public class AreaRacc {
-     private Famigliare famigliare = null;
-     private final int vincolo = 1;
-     private boolean occupato = false;
+public class AreaProd {
+    private Famigliare famigliare = null;
+    private final int vincolo = 1;
+    private boolean occupato = false;
 
 
     public Famigliare getMembro(){

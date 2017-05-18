@@ -8,7 +8,8 @@ public class CartaTerritorio extends Carta {
     private String effettoImm;
     private String effettoPer; //vedere se fare classe con tutti gli effetti
 
-    public CartaTerritorio(String nome,String effettoImmed,String effettoPerman){
+    public CartaTerritorio(String nome,String effettoImmed,String effettoPerman,int period,int costo){
+        super(period,costo);
         this.nome = nome;
         effettoImm = effettoImmed;
         effettoPer = effettoPerman;

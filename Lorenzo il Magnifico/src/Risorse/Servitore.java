@@ -1,6 +1,4 @@
-package Risorse;
-
-import Risorse.Risorsa;
+package risorse;
 
 /**
  * Created by ggnsingh on 16/05/2017.

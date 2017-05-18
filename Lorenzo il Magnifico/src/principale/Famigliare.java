@@ -1,4 +1,7 @@
-import tabellone.AreaTorre;
+package principale;
+
+import tabellone.torre.AreaTorre;
+import tabellone.torre.Torre;
 
 /**
  * Created by dimitri on 13/05/2017.
@@ -29,7 +32,8 @@ public class Famigliare {
 
         forzaFami-=forzaDaTogliere;
     }
-    public void posiziona(AreaTorre area){
+    public void posiziona(AreaTorre area, Torre torre){
+       if(! a.getOcccupato())//fare controllo sull area se è prente o no
         if (forzaFami>=area.getVincolodado())
         area.setMembro(this);// dovrei passare il famigliare stesso in quella area facendo controllo opportuni
 

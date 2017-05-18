@@ -1,9 +1,9 @@
-package tabellone;
-
+package tabellone.RaccoltaProduzione;
+import principale.*;
 /**
  * Created by dimitri on 15/05/2017.
  */
-public class Raccolto {
+public class Raccolto {//MANCA GESTIONE GIOCATORI DIVERSI DA 4
     private final int quantifam =5;
             private final int malusFisso=3;
             private AreaRacc[] celle = new AreaRacc[quantifam];

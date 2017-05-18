@@ -1,9 +1,12 @@
-package tabellone;
+package tabellone.RaccoltaProduzione;
+import principale.*;
+
 
 /**
  * Created by ggnsingh on 15/05/2017.
  */
-public class Produzione {
+public class Produzione {//manca gestione giocatori meno di 4
+
 
     private final int quantifam =5;
     private final int malusFisso=3;

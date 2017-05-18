@@ -1,4 +1,6 @@
-import java.awt.*;
+package tabellone;
+
+import principale.Colore;
 
 /**
  * Created by dimitri on 13/05/2017.

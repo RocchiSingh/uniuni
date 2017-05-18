@@ -1,10 +1,14 @@
+package tabellone;
+import risorse.*;
+import principale.Famigliare;
+
 /**
  * Created by dimitri on 16/05/2017.
  */
 public class Consiglio {
 
     private final int vincolo = 1;
-    private final int ricompensaMoneta = 1;
+    private final Moneta ricompensaMoneta = new Moneta(1);
     private Privilegio privilegio = new Privilegio();
     private Famigliare[] ordArr = new Famigliare[16];
 
@@ -25,4 +29,6 @@ public class Consiglio {
     public Famigliare[] getOrdArr(){
         return ordArr;
     }
+    public Moneta getRicompensaMoneta(){return ricompensaMoneta;}
+    public Privilegio getPrivilegio(){return privilegio;}
 }

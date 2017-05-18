@@ -9,7 +9,8 @@ public class CartaPersonaggi extends Carta  {
     private String effettoImm; //azione bonus?
     private String effettoPer; //vedere se fare classe con tutti gli effetti
 
-    public CartaPersonaggi(int money,String nome,String effettoImmed,String effettoPerman){
+    public CartaPersonaggi(int money,String nome,String effettoImmed,String effettoPerman,int period,int costo){
+        super(period,costo);
         costoMonete = money;
         this.nome = nome;
         effettoImm = effettoImmed;

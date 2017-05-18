@@ -12,7 +12,8 @@ public class CartaImprese extends Carta  {
     //vedere se fare classe con tutti gli effetti
     private int puntiVittoria;
 
-    public CartaImprese(int costoMil,int costoLeg,int costoPie,String nome,String effettoImmed,int puntiVitt){
+    public CartaImprese(int costoMil,int costoLeg,int costoPie,String nome,String effettoImmed,int puntiVitt,int period,int costo){
+        super(period,costo);
         costoMilitare = costoMil;
         costoLegno = costoLeg;
         costoPietra = costoPie;
