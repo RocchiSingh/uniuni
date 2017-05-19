@@ -33,7 +33,7 @@ public class Famigliare {
         forzaFami-=forzaDaTogliere;
     }
     public void posiziona(AreaTorre area, Torre torre){
-       if(! a.getOcccupato())//fare controllo sull area se è prente o no
+       if(! area.getOcccupato())//fare controllo sull area se è prente o no
         if (forzaFami>=area.getVincolodado())
         area.setMembro(this);// dovrei passare il famigliare stesso in quella area facendo controllo opportuni
 
@@ -41,6 +41,10 @@ public class Famigliare {
     }
     public Colore getColore(){
         return colore;
+    }
+
+    public void setColore(Colore color){
+        colore = color;
     }
 
 }
