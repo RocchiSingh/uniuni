@@ -14,8 +14,7 @@ public class Chiesa {
         slotPeriodo[2].setTessera(periodIII);
     }
 
-    public void pulisciChiesa(){// dobbiamo valutare se serve o no poichè alla fine la chiesa si riempie una sola volta. e nn si cambia durante la partita. mentre serve per pulire a fine partita ma non do
-        //se a fine partira si riparte da tabbellone nuovo e tutto nuovo quidi forse nn serve. valuteremo
+    public void pulisciChiesa(){/*vedere se serve perche si riempe una sola volta*/
         for(int i=0;i<3;i++){
             slotPeriodo[i].togliTessera();
         }

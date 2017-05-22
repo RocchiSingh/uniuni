@@ -6,4 +6,12 @@ import principale.Colore;
  */
 public class CuboScomunica {
     private Colore colore;
+
+    public CuboScomunica(Colore color){
+        colore = color;
+    }
+
+    public void setColore(Colore color){
+        colore = color;
+    }
 }
