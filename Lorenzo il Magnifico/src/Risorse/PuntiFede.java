@@ -19,4 +19,14 @@ public class PuntiFede extends Risorsa {private int valoreRisorsa = 0;
 
         this.valoreRisorsa = valoreRisorsa;
     }
+
+    public void incrementaFede(int valoreRisorsa) { //usare le eccezzioni
+
+        this.valoreRisorsa += valoreRisorsa;
+    }
+
+    public void decrementaFede(int valoreRisorsa) { //usare le eccezzioni
+
+        this.valoreRisorsa -= valoreRisorsa;
+    }
 }

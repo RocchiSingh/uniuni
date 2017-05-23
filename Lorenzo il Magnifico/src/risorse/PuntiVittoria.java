@@ -1,16 +1,15 @@
 package risorse;
 
 /**
- * Created by ggnsingh on 16/05/2017.
+ * Created by dimitri on 23/05/2017.
  */
-public class Pietra extends Risorsa{
-
+public class PuntiVittoria {
     private int valoreRisorsa = 0;
 
-    public Pietra(){
+    public PuntiVittoria(){
         valoreRisorsa = 0;
     }
-    public Pietra( int valoreRisorsa){
+    public PuntiVittoria (int valoreRisorsa){
         this.valoreRisorsa = valoreRisorsa;
     }
     public int getValoreRisorsa(){
@@ -22,14 +21,13 @@ public class Pietra extends Risorsa{
         this.valoreRisorsa = valoreRisorsa;
     }
 
-    public void incrementaRis(int valoreRisorsa) { //usare le eccezzioni
+    public void incrementaVitt(int valoreRisorsa) { //usare le eccezzioni
 
         this.valoreRisorsa += valoreRisorsa;
     }
 
-    public void decrementaRis(int valoreRisorsa) { //usare le eccezzioni
+    public void decrementaVitt(int valoreRisorsa) { //usare le eccezzioni
 
-        this.valoreRisorsa -= valoreRisorsa;
+        this.valoreRisorsa = valoreRisorsa;
     }
-
 }

@@ -20,4 +20,14 @@ public class PuntiMilitari extends Risorsa {
 
         this.valoreRisorsa = valoreRisorsa;
     }
+
+    public void incrementaMil(int valoreRisorsa) { //usare le eccezzioni
+
+        this.valoreRisorsa += valoreRisorsa;
+    }
+
+    public void decrementaMil(int valoreRisorsa) { //usare le eccezzioni
+
+        this.valoreRisorsa = valoreRisorsa;
+    }
 }

@@ -11,4 +11,6 @@ public abstract class Risorsa {
     abstract  int getValoreRisorsa();
 
     abstract  void impostaRis(int valoreRisorsa);
+
+
 }

@@ -16,4 +16,5 @@ public class Carta {
     public boolean getAggiunta(){return aggiunta;}
 
     public void setAggiunta(){aggiunta = true;}
+
 }

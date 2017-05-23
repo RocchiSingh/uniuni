@@ -23,4 +23,8 @@ public class Disco {
     public void setPosizione(int posix){
         posizione = posix;
     }
+
+    public void setColor(Colore colore){
+        color = colore;
+    }
 }
