@@ -45,19 +45,23 @@ public class Famigliare {
        if(! area.getOcccupato() && !torre.contrlPresFam(fam.getColore())) {//fare controllo sull area se è prente o no
            if (forzaFami >= area.getVincolodado()) {
                area.setMembro(fam);// dovrei passare il famigliare stesso in quella area facendo controllo opportuni
+               torre.giveRicompensa(area, torre, giocAppartenenza);
            }
        }
        if(!area.getOcccupato() && torre.contrlPresFam(fam.getColore()) && fam.colore == Colore.WHITE){
            //significa che sto inserendo famigliare neutro
-           if (forzaFami >= area.getVincolodado()){
+           if (forzaFami >= area.getVincolodado()) {
                area.setMembro(fam);
+               torre.giveRicompensa(area, torre, giocAppartenenza);
            }
+
        }
        if(!area.getOcccupato() && torre.contrlPres()){
            //devo pagare tre monete perchè c'è un altro famigliare presente
            if(forzaFami >= area.getVincolodado()){
                area.setMembro(fam);
                giocAppartenenza.pagaMoneta(3);
+               torre.giveRicompensa(area, torre, giocAppartenenza);
            }
        }
        if(area.getOcccupato()){System.out.print("area occupata");}

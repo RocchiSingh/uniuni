@@ -11,7 +11,7 @@ public class VettoreTerritori {
 
     public void aggiungiCarta(CartaTerritorio carta){
         for(int i=0;i<6;i++){
-            if(territori[i].getAggiunta() == false & vincoloMil[i] <= Giocatore.getPuntiMilitari()){
+            if(territori[i].getAggiunta() == false /*& vincoloMil[i] <= Giocatore.getPuntiMilitari()*/){
                 territori[i] = carta;
                 territori[i].setAggiunta();
             }

@@ -12,7 +12,7 @@ public class DiscoMilitare extends Disco {
         super(colore,posizione);
     }
 
-    public void setPosizoneMil(){
+    /*public void setPosizoneMil(){
         setPosizione(Giocatore.getPuntiMilitari());
-    }
+    }*/
 }

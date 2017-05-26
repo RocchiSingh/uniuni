@@ -12,7 +12,7 @@ public class DiscoFede extends Disco {
         super(colore,posizione);
     }
 
-    public void setPosizoneFede(){
+    /*public void setPosizoneFede(){
         setPosizione(Giocatore.getPuntiFede());
-    }
+    }*/
 }

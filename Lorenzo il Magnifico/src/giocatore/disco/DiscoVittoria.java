@@ -12,7 +12,7 @@ public class DiscoVittoria extends Disco {
         super(colore,posizione);
     }
 
-    public void setPosizoneVitt(){
+   /* public void setPosizoneVitt(){
         setPosizione(Giocatore.getPuntiVittoria());
-    }
+    }*/
 }
