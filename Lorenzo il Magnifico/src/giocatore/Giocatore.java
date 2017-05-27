@@ -73,8 +73,12 @@ public class Giocatore {
         puntiVittoria.decrementaVitt(quantità);
     }
 
+<<<<<<< HEAD
     public void setColore(Colore color){ // QUESTO METODO NON SERVE BASTA METTERE UN COLORE NEL FAMIGLIARE E APPENA SI CREA UN OGGETTO ALL INTERNO DEL GIOCATORE NEL COSTRUTTORE SI PASSA IL COLORE DEL GIOCATORE:
         // TRANNE PER IL FAMIGLIARE NEUTRO CHE LO CHIAMIAMO PROPRIO NEUTRO COSI é PARTICOLARE E DIVERSO NEI CONTROLLI POSSIAMO FACILITAR LA COSA
+=======
+    public void setColore(Colore color){
+>>>>>>> origin/master
         for(int i=0;i<3;i++){
             famGiocatore[i].setColore(color);
         }famGiocatore[3].setColore(Colore.WHITE);  //famigliare neutro
@@ -87,7 +91,11 @@ public class Giocatore {
         discoTurni.setColor(color);
     }
 
+<<<<<<< HEAD
     public void setRisorseIniziali(){ // QUESTO METODO VA MODIFICATO A SECONDO DEL GIOCATORE CHE é NEL TURNO: OGNI GIOCATORE PARTE CON MONETE DIVERSE CHE FANNO PARTE DELLE RISORSE INIZIALI
+=======
+    public void setRisorseIniziali(){
+>>>>>>> origin/master
         risorseLegno.impostaRis(2);
         risorsePietra.impostaRis(2);
         servitori.impostaRis(2);

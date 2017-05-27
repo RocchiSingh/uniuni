@@ -9,7 +9,7 @@ import principale.*;
  */
 public class AreaTorre {
    private int pianoTorre = -1; //piani vanno da 0 a 3
-   private Risorsa ricompensa = null;
+   private int ricompensa = 0;
   // private String tipoTorre = "";
    private int vincolodado = 0; // i vincoli sono da 1 ,3 ,5 ,7
    private Carta carta= null;
@@ -17,7 +17,7 @@ public class AreaTorre {
    private boolean occupato = false;
    private Famigliare membro = null;
 
-    public AreaTorre(int piano,Risorsa premio,int vincolo){
+    public AreaTorre(int piano,int premio,int vincolo){
         pianoTorre = piano;
         ricompensa = premio;
         vincolodado = vincolo;
@@ -30,7 +30,7 @@ public class AreaTorre {
         carta = null;
         cartasi = false;
     }
-    public Risorsa getRicompensa(){
+    public int getRicompensa(){
         return ricompensa;
     }
     public int getVincolodado(){
@@ -60,7 +60,11 @@ public class AreaTorre {
         occupato = false;
     }
 
+<<<<<<< HEAD
     public void setRicompensa(Risorsa quantitàRicomp){
+=======
+    public void setRicompensa(int quantitàRicomp){
+>>>>>>> origin/master
         ricompensa = quantitàRicomp;
     }
 

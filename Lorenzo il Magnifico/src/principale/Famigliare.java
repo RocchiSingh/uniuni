@@ -41,12 +41,16 @@ public class Famigliare {
 
         forzaFami-=forzaDaTogliere;
     }
+<<<<<<< HEAD
     //QUESTI METODI SECONDO ME NON SERVONO, PERCHé NOI METTIAMO I METODI POSIZIONA GIA
     // DIRETTAMENTE SUL TABELLONE O NELL AREA: ALTRIMENTI ANCHE QUA DOVRESTI PASSARE LE AREE
     // FACENDO COSI ALL AREA SI PASSA IL FAMIGLIARE E QUELA GESTISCE I CONTROLLI DI PRESENZA O NO E TUTTO
     // E SE SI INSERISCE LA FUNZIONA FARA IL RTURN DEL BONUS CHE CI ASPETTA; E COSI POTREMMO GESTIRE ANche LA CARTE QUESTO LO VALUTIMO INSIEME.
 
    /* public void posizionaTorre(AreaTorre area, Torre torre,Famigliare fam){
+=======
+    public void posizionaTorre(AreaTorre area, Torre torre,Famigliare fam){
+>>>>>>> origin/master
        if(! area.getOcccupato() && !torre.contrlPresFam(fam.getColore())) {//fare controllo sull area se è prente o no
            if (forzaFami >= area.getVincolodado()) {
                area.setMembro(fam);// dovrei passare il famigliare stesso in quella area facendo controllo opportuni
@@ -78,6 +82,7 @@ public class Famigliare {
     public void posizionaProduzione(Produzione produzione,Famigliare fam){
         produzione.inserisciMembro(fam);
     }
+<<<<<<< HEAD
 
     public void posizionaRaccolto(Raccolto raccolto,Famigliare fam){
         raccolto.inserisciMembro(fam);
@@ -110,6 +115,40 @@ public class Famigliare {
         }
     }*/
 
+=======
+
+    public void posizionaRaccolto(Raccolto raccolto,Famigliare fam){
+        raccolto.inserisciMembro(fam);
+    }
+
+    public void posizionaConsiglio(Consiglio consiglio,Famigliare fam){
+        consiglio.inserisciFam(fam,giocAppartenenza);
+    }
+
+    public void posizionaMercato(Mercato mercato,Famigliare fam,int scegliarea){
+        if(scegliarea == 1){
+            mercato.getBonusAreaUno(fam,giocAppartenenza);
+        }
+        if(scegliarea == 2){
+            mercato.getBonusAreaDue(fam,giocAppartenenza);
+        }
+        if(scegliarea == 3){
+            mercato.getBonusAreaTre(fam,giocAppartenenza);
+        }
+        if(scegliarea == 4){
+            System.out.print("scegli privilegio:" +
+                    "0=legno/pietra" +
+                    "1=servitori"+
+                    "2=monete" +
+                    "3=punti militari" +
+                    "4=punti fede");
+            Scanner scan = new Scanner(System.in);
+            int numeropriv = scan.nextInt();
+            mercato.getBonusPrivi(numeropriv,fam,giocAppartenenza);
+        }
+    }
+
+>>>>>>> origin/master
     public static Colore getColore(){
         return colore;
     }

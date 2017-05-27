@@ -50,19 +50,43 @@ public class Torre {
         }return false;
     }
 
+<<<<<<< HEAD
     public void setRicompensa(Torre torre){//questo metodo non serve poichè va messo alla creazione dell area torre per passaggio nel costruttore del area torre. e visto che tutte le aree hanno
         //risorse diverse veranno passate uelle giusto invece di passare un int ogni volta e ricordarlo per scrivere il tutto
            // livelli[2].setRicompensa(1);
            // livelli[3].setRicompensa(2);
+=======
+    public void setRicompensa(Torre torre){
+            livelli[2].setRicompensa(1);
+            livelli[3].setRicompensa(2);
+>>>>>>> origin/master
     }
 
     public Colore getColoreTorre(){return coloreTorre;}
 
     public void giveRicompensa(AreaTorre area,Torre torre,Giocatore giocatore){
+<<<<<<< HEAD
      // queso metodo lo chiamiamo imetti fmigliare e come return darà una risorsa. il giocatore prende la risosrsa e la aggiunge alle sue. il metodo avra in ingresso solo il famigliare
         //il metodo avra in ingresso il piano e il amigliare e se assegnare o no la risorsa dipende dall variare risorsa dell area se ha una risorsa o no
         //guarda il consiglio
+=======
+        if(area.getPiano() == 2){
+            if(torre.getColoreTorre() == Colore.GREEN){giocatore.prendiLegno(area.getRicompensa());}
+            if(torre.getColoreTorre() == Colore.BLUE){giocatore.prendiPietra(area.getRicompensa());}
+            if(torre.getColoreTorre() == Colore.YELLOW){giocatore.incremPuntiMil(area.getRicompensa());}
+            if(torre.getColoreTorre() == Colore.PURPLE){giocatore.prendiMonete(area.getRicompensa());}
+        }
+        if(area.getPiano() == 3){
+            if(torre.getColoreTorre() == Colore.GREEN){giocatore.prendiLegno(area.getRicompensa());}
+            if(torre.getColoreTorre() == Colore.BLUE){giocatore.prendiPietra(area.getRicompensa());}
+            if(torre.getColoreTorre() == Colore.YELLOW){giocatore.incremPuntiMil(area.getRicompensa());}
+            if(torre.getColoreTorre() == Colore.PURPLE){giocatore.prendiMonete(area.getRicompensa());}
+>>>>>>> origin/master
         }
     }
 
 
+<<<<<<< HEAD
+=======
+}
+>>>>>>> origin/master

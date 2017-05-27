@@ -11,6 +11,10 @@ public enum Colore {
     BLUE,
     YELLOW,
     PURPLE,
+<<<<<<< HEAD
     GREEN,
     VIOLET
+=======
+    GREEN
+>>>>>>> origin/master
 }
