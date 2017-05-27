@@ -13,6 +13,7 @@ public class Legna extends Risorsa{
     public Legna( int valoreRisorsa){
         this.valoreRisorsa = valoreRisorsa;
     }
+
     public int getValoreRisorsa(){
         return valoreRisorsa;
     }
@@ -22,4 +23,13 @@ public class Legna extends Risorsa{
         this.valoreRisorsa = valoreRisorsa;
     }
 
+    public void incrementaRis(int valoreRisorsa) { //usare le eccezzioni
+
+        this.valoreRisorsa += valoreRisorsa;
+    }
+
+    public void decrementaRis(int valoreRisorsa) { //usare le eccezzioni
+
+        this.valoreRisorsa -= valoreRisorsa;
+    }
 }

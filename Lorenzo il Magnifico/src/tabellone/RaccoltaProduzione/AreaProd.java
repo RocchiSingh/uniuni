@@ -23,8 +23,9 @@ public class AreaProd {
     }
 
     public void setMembro(Famigliare famigliare){
-        this.famigliare = famigliare;
-        occupato = true;
+        if(famigliare.getForzaFami()>=vincolo&&occupato==false){
+        this.famigliare = famigliare;//eccezione famigliare presente
+        occupato = true;} //lanciare eccezione per gestire il tutto se la forza non è abbastanza
     }
 
     public void rimuoviMembro(){

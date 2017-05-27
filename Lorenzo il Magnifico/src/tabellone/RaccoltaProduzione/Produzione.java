@@ -1,5 +1,6 @@
 package tabellone.RaccoltaProduzione;
 import principale.*;
+import giocatore.plancia.*;
 
 
 /**
@@ -20,7 +21,9 @@ public class Produzione {//manca gestione giocatori meno di 4
 
     public boolean contrlPres(){
         for(int i=0;i<=quantifam;i++){
-            return celle[i].getOcccupato();
+            if(celle[i].getOcccupato()){
+                return true;
+            }
         }return false;
     }
 
@@ -39,10 +42,12 @@ public class Produzione {//manca gestione giocatori meno di 4
 
         if(contrlPresFam(membro.getColore())){return false;} //fare controllo su id per distinguere i neutri
         else{
-            if(!(celle[0].getOcccupato())){celle[0].setMembro(membro); return true;}
+            if(!(celle[0].getOcccupato())){celle[0].setMembro(membro);
+                TesseraBonus.setRicompProd(); return true;}
             for(int i=1;i<quantifam;i++) {
                 if (!(celle[i].getOcccupato())) {
                     celle[i].setMembro(membro);
+                    TesseraBonus.setRicompProd();
                     malus(membro);
                     return true;
                 }

@@ -22,4 +22,14 @@ public class Pietra extends Risorsa{
         this.valoreRisorsa = valoreRisorsa;
     }
 
+    public void incrementaRis(int valoreRisorsa) { //usare le eccezzioni
+
+        this.valoreRisorsa += valoreRisorsa;
+    }
+
+    public void decrementaRis(int valoreRisorsa) { //usare le eccezzioni
+
+        this.valoreRisorsa -= valoreRisorsa;
+    }
+
 }

@@ -9,6 +9,7 @@ public class CartaEdifici extends Carta {
     private String nome;
     private String effettoImm;
     private String effettoPer; //vedere se fare classe con tutti gli effetti
+    //GESTIAMO SOLO GLI EFFETTI PIU SEMPLICI
 
     public CartaEdifici(int costlegn,int costpiet,String nome,String effettoImmed,String effettoPerman,int period,int costo){
         super(period,costo);

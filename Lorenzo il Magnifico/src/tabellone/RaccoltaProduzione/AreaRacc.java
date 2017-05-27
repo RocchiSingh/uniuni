@@ -24,12 +24,14 @@ public class AreaRacc {
     }
 
     public void setMembro(Famigliare famigliare){
-        this.famigliare = famigliare;
-        occupato = true;
+        if (famigliare.getForzaFami()>=vincolo&&occupato==false) {
+            this.famigliare = famigliare;//eccezione famigliare gia presente
+            occupato = true;
+        }//lanciare un eccezione che dice che la forza famigliare non è sufficiente
     }
 
     public void rimuoviMembro(){
-        famigliare = null;
+        famigliare = null;//eccezione famigliare non presente
         occupato = false;
     }
 }

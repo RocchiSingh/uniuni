@@ -1,5 +1,7 @@
 package risorse;
 
+import giocatore.Giocatore;
+
 /**
  * Created by ggnsingh on 16/05/2017.
  */
@@ -33,31 +35,59 @@ public class Privilegio {
         return preso;
     }
 
+    public Risorsa[] getRisorsa(int numRis){
 
-    public Risorsa[]  getLegnaPietra(){
+        Risorsa[] retVal= new Risorsa[2];
+
+        switch (numRis){
+        case 1:
+            retVal= getLegnaPietra();
+        break;
+            case 2:
+                retVal= getServitore();
+            break;
+            case 3:
+                retVal= getMonete();
+            break;
+            case 4:
+                retVal= getPuntiMil();
+            break;
+            case 5:
+                retVal =getPuntiFede();
+            break;
+            default:
+                retVal= null;
+
+        }
+         return retVal;
+    }
+
+    private Risorsa[]  getLegnaPietra(){
         preso="lengaPietra";
         return legnaPietra;
     }
 
-    public Risorsa[] getServitore(){
+    private Risorsa[] getServitore(){
         preso="servitore";
         return servitore;
     }
 
-    public Risorsa[] getMonete(){
+   private Risorsa[] getMonete(){
         preso="monete";
         return monete;
     }
 
-    public Risorsa[] getPuntiMil(){
+   private Risorsa[] getPuntiMil(){
         preso="puntiMilitari";
         return puntiMil;
     }
 
-    public Risorsa[] getPuntiFede(){
+  private Risorsa[] getPuntiFede(){
         preso="puntiFede";
         return puntiFede;
     }
+
+
 
 
 

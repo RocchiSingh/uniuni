@@ -59,4 +59,14 @@ public class AreaTorre {
         membro = null;
         occupato = false;
     }
+
+    public void setRicompensa(Risorsa quantitàRicomp){
+        ricompensa = quantitàRicomp;
+    }
+
+    public int getPiano(){return pianoTorre;}
+
+    public void setPianoTorre(int piano){
+        pianoTorre = piano;
+    }
 }
